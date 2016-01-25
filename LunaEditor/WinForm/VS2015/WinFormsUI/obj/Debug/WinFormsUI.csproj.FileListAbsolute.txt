@@ -1,0 +1,23 @@
+7                   0x882C
+#define GL_DRAW_BUFFER8                   0x882D
+#define GL_DRAW_BUFFER9                   0x882E
+#define GL_DRAW_BUFFER10                  0x882F
+#define GL_DRAW_BUFFER11                  0x8830
+#define GL_DRAW_BUFFER12                  0x8831
+#define GL_DRAW_BUFFER13                  0x8832
+#define GL_DRAW_BUFFER14                  0x8833
+#define GL_DRAW_BUFFER15                  0x8834
+#define GL_MAX_FRAGMENT_UNIFORM_COMPONENTS 0x8B49
+#define GL_MAX_VERTEX_UNIFORM_COMPONENTS  0x8B4A
+#define GL_SAMPLER_3D                     0x8B5F
+#define GL_SAMPLER_2D_SHADOW              0x8B62
+#define GL_FRAGMENT_SHADER_DERIVATIVE_HINT 0x8B8B
+#define GL_PIXEL_PACK_BUFFER              0x88EB
+#define GL_PIXEL_UNPACK_BUFFER            0x88EC
+#define GL_PIXEL_PACK_BUFFER_BINDING      0x88ED
+#define GL_PIXEL_UNPACK_BUFFER_BINDING    0x88EF
+#define GL_FLOAT_MAT2x3                   0x8B65
+#define GL_FLOAT_MAT2x4                   0x8B66
+#define GL_FLOAT_MAT3x2                   0x8B67
+#define GL_FLOAT_MAT3x4                   0x8B68
+#define G

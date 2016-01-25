@@ -1,0 +1,155 @@
+#ifndef __gl2ext_h_
+#define __gl2ext_h_ 1
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+/*
+** Copyright (c) 2013-2014 The Khronos Group Inc.
+**
+** Permission is hereby granted, free of charge, to any person obtaining a
+** copy of this software and/or associated documentation files (the
+** "Materials"), to deal in the Materials without restriction, including
+** without limitation the rights to use, copy, modify, merge, publish,
+** distribute, sublicense, and/or sell copies of the Materials, and to
+** permit persons to whom the Materials are furnished to do so, subject to
+** the following conditions:
+**
+** The above copyright notice and this permission notice shall be included
+** in all copies or substantial portions of the Materials.
+**
+** THE MATERIALS ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+** EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+** MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+** IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+** CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+** TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+** MATERIALS OR THE USE OR OTHER DEALINGS IN THE MATERIALS.
+*/
+/*
+** This header is generated from the Khronos OpenGL / OpenGL ES XML
+** API Registry. The current version of the Registry, generator scripts
+** used to make the header, and the header can be found at
+**   http://www.opengl.org/registry/
+**
+** Khronos $Revision: 26645 $ on $Date: 2014-05-14 10:00:42 -0700 (Wed, 14 May 2014) $
+*/
+
+#ifndef GL_APIENTRYP
+#define GL_APIENTRYP GL_APIENTRY*
+#endif
+
+/* Generated on date 20140514 */
+
+/* Generated C header for:
+ * API: gles2
+ * Profile: common
+ * Versions considered: 2\.[0-9]
+ * Versions emitted: _nomatch_^
+ * Default extensions included: gles2
+ * Additional extensions included: _nomatch_^
+ * Extensions removed: _nomatch_^
+ */
+
+
+#ifndef GL_KHR_blend_equation_advanced
+#define GL_KHR_blend_equation_advanced 1
+#define GL_BLEND_ADVANCED_COHERENT_KHR    0x9285
+#define GL_MULTIPLY_KHR                   0x9294
+#define GL_SCREEN_KHR                     0x9295
+#define GL_OVERLAY_KHR                    0x9296
+#define GL_DARKEN_KHR                     0x9297
+#define GL_LIGHTEN_KHR                    0x9298
+#define GL_COLORDODGE_KHR                 0x9299
+#define GL_COLORBURN_KHR                  0x929A
+#define GL_HARDLIGHT_KHR                  0x929B
+#define GL_SOFTLIGHT_KHR                  0x929C
+#define GL_DIFFERENCE_KHR                 0x929E
+#define GL_EXCLUSION_KHR                  0x92A0
+#define GL_HSL_HUE_KHR                    0x92AD
+#define GL_HSL_SATURATION_KHR             0x92AE
+#define GL_HSL_COLOR_KHR                  0x92AF
+#define GL_HSL_LUMINOSITY_KHR             0x92B0
+typedef void (GL_APIENTRYP PFNGLBLENDBARRIERKHRPROC) (void);
+#ifdef GL_GLEXT_PROTOTYPES
+GL_APICALL void GL_APIENTRY glBlendBarrierKHR (void);
+#endif
+#endif /* GL_KHR_blend_equation_advanced */
+
+#ifndef GL_KHR_debug
+#define GL_KHR_debug 1
+typedef void (GL_APIENTRY  *GLDEBUGPROCKHR)(GLenum source,GLenum type,GLuint id,GLenum severity,GLsizei length,const GLchar *message,const void *userParam);
+#define GL_SAMPLER                        0x82E6
+#define GL_DEBUG_OUTPUT_SYNCHRONOUS_KHR   0x8242
+#define GL_DEBUG_NEXT_LOGGED_MESSAGE_LENGTH_KHR 0x8243
+#define GL_DEBUG_CALLBACK_FUNCTION_KHR    0x8244
+#define GL_DEBUG_CALLBACK_USER_PARAM_KHR  0x8245
+#define GL_DEBUG_SOURCE_API_KHR           0x8246
+#define GL_DEBUG_SOURCE_WINDOW_SYSTEM_KHR 0x8247
+#define GL_DEBUG_SOURCE_SHADER_COMPILER_KHR 0x8248
+#define GL_DEBUG_SOURCE_THIRD_PARTY_KHR   0x8249
+#define GL_DEBUG_SOURCE_APPLICATION_KHR   0x824A
+#define GL_DEBUG_SOURCE_OTHER_KHR         0x824B
+#define GL_DEBUG_TYPE_ERROR_KHR           0x824C
+#define GL_DEBUG_TYPE_DEPRECATED_BEHAVIOR_KHR 0x824D
+#define GL_DEBUG_TYPE_UNDEFINED_BEHAVIOR_KHR 0x824E
+#define GL_DEBUG_TYPE_PORTABILITY_KHR     0x824F
+#define GL_DEBUG_TYPE_PERFORMANCE_KHR     0x8250
+#define GL_DEBUG_TYPE_OTHER_KHR           0x8251
+#define GL_DEBUG_TYPE_MARKER_KHR          0x8268
+#define GL_DEBUG_TYPE_PUSH_GROU>
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\sort.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\sort_hc.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\menuimages.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\menuimages_hc.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\output_wnd.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\output_wnd_hc.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\properties_wnd.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\properties_wnd_hc.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\properties.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\properties_hc.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="UserImages.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\LunaEditorDoc.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\LunaEditor.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Toolbar.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Toolbar256.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\LunaEditor.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+</Project>

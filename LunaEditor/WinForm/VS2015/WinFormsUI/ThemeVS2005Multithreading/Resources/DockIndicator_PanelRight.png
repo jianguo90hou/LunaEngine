@@ -1,0 +1,29 @@
+/******************************************************************************
+
+ @File         OGLES2ChameleonMan.cpp
+
+ @Title        OGLES2ChameleonMan
+
+ @Version      
+
+ @Copyright    Copyright (c) Imagination Technologies Limited.
+
+ @Platform     Independent
+
+ @Description  Shows how to perform skinning combined with Dot3 lighting
+
+******************************************************************************/
+#include "PVRShell.h"
+#include "OGLES2Tools.h"
+
+/******************************************************************************
+ Constants
+******************************************************************************/
+
+// Camera constants used to generate the projection matrix
+const float g_fCameraNear	= 4.0f;
+const float g_fCameraFar	= 30000.0f;
+
+const float g_fDemoFrameRate = 0.02f;
+
+/*************************************************************************

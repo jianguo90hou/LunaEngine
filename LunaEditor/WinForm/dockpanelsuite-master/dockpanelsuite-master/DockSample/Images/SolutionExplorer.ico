@@ -1,0 +1,26 @@
+LOCAL_PATH := $(call my-dir)/../../../../../../../..
+PVRSDKDIR := $(realpath $(LOCAL_PATH))
+
+ASSETDIR := $(PVRSDKDIR)/Examples/Advanced/ChameleonMan/OGLES2/Build/Android/assets
+
+CPY := cp
+SEPARATOR := /
+ifeq ($(HOST_OS),windows)
+CPY := copy
+SEPARATOR := \\
+endif
+
+# Module OGLES2ChameleonMan
+include $(CLEAR_VARS)
+
+LOCAL_MODULE    := OGLES2ChameleonMan
+
+### Add all source file names to be included in lib separated by a whitespace
+LOCAL_SRC_FILES  := Examples/Advanced/ChameleonMan/OGLES2/OGLES2ChameleonMan.cpp \
+                    Shell/PVRShell.cpp \
+                    Shell/API/KEGL/PVRShellAPI.cpp \
+                    Shell/OS/Android/PVRShellOS.cpp
+
+LOCAL_C_INCLUDES := $(PVRSDKDIR)/Shell \
+                    $(PVRSDKDIR)/Shell/API/KEGL \
+             

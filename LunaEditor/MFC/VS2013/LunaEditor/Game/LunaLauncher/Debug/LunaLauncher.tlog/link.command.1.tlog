@@ -1,0 +1,42 @@
+#ifndef __glext_h_
+#define __glext_h_
+
+/* $Revision: 20798 $ on $Date:: 2013-03-07 01:19:34 -0800 #$ */
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+/*
+ * This document is licensed under the SGI Free Software B License Version
+ * 2.0. For details, see http://oss.sgi.com/projects/FreeB/ .
+ */
+
+#ifndef GL_APIENTRYP
+#   define GL_APIENTRYP GL_APIENTRY*
+#endif
+
+/*------------------------------------------------------------------------*
+ * OES extension tokens
+ *------------------------------------------------------------------------*/
+
+/* GL_OES_blend_equation_separate */
+#ifndef GL_OES_blend_equation_separate
+/* BLEND_EQUATION_RGB_OES same as BLEND_EQUATION_OES */
+#define GL_BLEND_EQUATION_RGB_OES                               0x8009
+#define GL_BLEND_EQUATION_ALPHA_OES                             0x883D
+#endif
+
+/* GL_OES_blend_func_separate */
+#ifndef GL_OES_blend_func_separate
+#define GL_BLEND_DST_RGB_OES                                    0x80C8
+#define GL_BLEND_SRC_RGB_OES                                    0x80C9
+#define GL_BLEND_DST_ALPHA_OES                                  0x80CA
+#define GL_BLEND_SRC_ALPHA_OES                                  0x80CB
+#endif
+
+/* GL_OES_blend_subtract */
+#ifndef GL_OES_blend_subtract
+#define GL_BLEND_EQUATION_OES                                   0x8009
+#define GL_FUNC_ADD_OES                                         0x8006
+#define GL_FUNC_SUBTRACT_OES                  

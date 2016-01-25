@@ -1,0 +1,38 @@
+/******************************************************************************
+
+ @File         OGLES2BinaryShader.cpp
+
+ @Title        OGLES2BinaryShader
+
+ @Version      
+
+ @Copyright    Copyright (c) Imagination Technologies Limited.
+
+ @Platform     Independant
+
+ @Description  Shows how to use extension GL_OES_get_program_binary (if
+               supported) to save a compiled shader out as a binary file and then
+               load it back in on future runs. It displays a red triangle if
+               forced to compile shaders and displays a green triangle if using binary shaders.
+
+******************************************************************************/
+#include <stdio.h>
+#include <string.h>
+
+#if defined(__APPLE__) && defined (TARGET_OS_IPHONE)
+	#import <OpenGLES/ES2/gl.h>
+	#import <OpenGLES/ES2/glext.h>
+#else
+	#include <GLES2/gl2.h>
+	#include <GLES2/gl2ext.h>
+#endif
+
+#if defined(EGL_NOT_PRESENT)
+	#define PVRGetProcAddress(x) NULL
+#else
+
+	#if defined(__APPLE__) && defined (TARGET_OS_IPHONE)
+		#define PVRGetProcAddress(x) ::x
+	#else
+		#include <EGL/egl.h>
+		#define PVRGetProcAddress(x) eglGetProcAddres

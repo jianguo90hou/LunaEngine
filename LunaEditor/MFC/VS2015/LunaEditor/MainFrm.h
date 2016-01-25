@@ -1,0 +1,15 @@
+D:\迅雷下载\dockpanelsuite-master\dockpanelsuite-master\DockSample\bin\Debug\license.txt
+D:\迅雷下载\dockpanelsuite-master\dockpanelsuite-master\DockSample\bin\Debug\DockSample.exe
+D:\迅雷下载\dockpanelsuite-master\dockpanelsuite-master\DockSample\bin\Debug\DockSample.pdb
+D:\迅雷下载\dockpanelsuite-master\dockpanelsuite-master\DockSample\bin\Debug\ThemeVS2003.dll
+D:\迅雷下载\dockpanelsuite-master\dockpanelsuite-master\DockSample\bin\Debug\ThemeVS2012Light.dll
+D:\迅雷下载\dockpanelsuite-master\dockpanelsuite-master\DockSample\bin\Debug\ThemeVS2013Blue.dll
+D:\迅雷下载\dockpanelsuite-master\dockpanelsuite-master\DockSample\bin\Debug\WeifenLuo.WinFormsUI.Docking.dll
+D:\迅雷下载\dockpanelsuite-master\dockpanelsuite-master\DockSample\bin\Debug\ThemeVS2003.pdb
+D:\迅雷下载\dockpanelsuite-master\dockpanelsuite-master\DockSample\bin\Debug\ThemeVS2012Light.pdb
+D:\迅雷下载\dockpanelsuite-master\dockpanelsuite-master\DockSample\bin\Debug\ThemeVS2013Blue.pdb
+D:\迅雷下载\dockpanelsuite-master\dockpanelsuite-master\DockSample\bin\Debug\WeifenLuo.WinFormsUI.Docking.pdb
+D:\迅雷下载\dockpanelsuite-master\dockpanelsuite-master\DockSample\obj\Debug\DockSample.csprojResolveAssemblyReference.cache
+D:\迅雷下载\dockpanelsuite-master\dockpanelsuite-master\DockSample\obj\Debug\DockSample.AboutDialog.resources
+D:\迅雷下载\dockpanelsuite-master\dockpanelsuite-master\DockSample\obj\Debug\DockSample.DummyDoc.resources
+D

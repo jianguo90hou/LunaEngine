@@ -1,0 +1,29 @@
+#
+# File			make_example.mak
+# Title			Used to build an example
+# Author		PowerVR
+#
+# Copyright		Copyright (C) by Imagination Technologies Limited.
+#
+#---------------------------------------------------------------------
+
+.PHONY: all print_info build_tools wrap_content_files clean
+
+ifndef PLATFORM
+$(error Error building application. You must define the PLATFORM variable to be the value of the target platform you want to build for. )
+endif
+
+all: print_info
+
+include $(SDKDIR)/Builds/Linux/platform.mak
+
+SHELLOS ?= Linux$(WS)
+SHELLAPI ?= KEGL
+
+SHELLOSPATH = $(SDKDIR)/Shell/OS/$(SHELLOS)
+SHELLAPIPATH = $(SDKDIR)/Shell/API/$(SHELLAPI)
+
+OBJECTS := $(addprefix $(PLAT_OBJPATH)/, $(OBJECTS))
+SOURCE_DEPENDENCIES := $(OBJECTS:.o=.d)
+
+INCLUDES += -I$(SDKDIR)/Builds/Incl

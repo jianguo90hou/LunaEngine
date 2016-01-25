@@ -1,0 +1,28 @@
+.
+				Used to initialize variables that are dependant on the rendering
+				context (e.g. textures, vertex buffers, etc.)
+******************************************************************************/
+bool OGLES2BinaryShader::InitView()
+{
+	// Initialise a colour to draw our triangle
+	// (For this training course, binary loaded shaders use a different colour
+	// To show which is being used. Red means it had to compile the shaders,
+	// green shows that it retrieved the binary from memory.
+	float afColour[]={0.0,0.0,0.0};
+
+	// Filename and path strings.
+	char* pWritePath = (char*)PVRShellGet(prefWritePath);
+	char* shaderPath = new char[strlen(pWritePath) + 13];
+	sprintf(shaderPath, "%sShaderBinary", pWritePath);
+
+	//Checks if the program binary handling extension is supported.
+	m_bBinaryShaderSupported=IsGLExtensionSupported("GL_OES_get_program_binary");
+
+#if !defined (TARGET_OS_IPHONE)
+	glGetProgramBinaryOES=0;
+	glProgramBinaryOES=0;
+
+	// Retrieves the functions needed to use the extension.
+	if (m_bBinaryShaderSupported)
+	{
+		glGetProgramBinaryOES = (PFNGLGETPROGR

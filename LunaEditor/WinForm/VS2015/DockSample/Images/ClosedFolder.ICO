@@ -1,0 +1,21 @@
+/*
+	If the current vertex is affected by bones then the vertex position and
+	normal will be transformed by the bone matrices. Each vertex wil have up 
+	to 4 bone indices (inBoneIndex) and bone weights (inBoneWeights).
+	
+	The indices are used to index into the array of bone matrices 
+	(BoneMatrixArray) to get the required bone matrix for transformation. The 
+	amount of influence a particular bone has on a vertex is determined by the
+	weights which should always total 1. So if a vertex is affected by 2 bones 
+	the vertex position in world space is given by the following equation:
+
+	position = (BoneMatrixArray[Index0] * inVertex) * Weight0 + 
+	           (BoneMatrixArray[Index1] * inVertex) * Weight1
+
+	The same proceedure is applied to the normals but the translation part of 
+	the transformation is ignored.
+
+	After this the position is multiplied by the view and projection matrices 
+	only as the bone matrices already contain the model transform for this 
+	particular mesh. The two-step transformation is required because lighting 
+	will not work properly in clip spac
